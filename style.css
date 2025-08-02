@@ -46,11 +46,13 @@ h1 {
   margin-top: -120px;
   margin-bottom: 30px;
   padding: 20px;
+  z-index: 1; 
 }
 
 .bloco-cidade h1 {
   color: #070707;
   margin-bottom: 25px;
+  z-index: 1; 
 }
 
 .button-container {
@@ -125,5 +127,6 @@ html, body {
   padding-right: env(safe-area-inset-right, 0);
   padding-bottom: env(safe-area-inset-bottom, 0);
 }
+
 
 
