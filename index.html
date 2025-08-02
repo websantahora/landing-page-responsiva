@@ -2,131 +2,28 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <title>Cidades</title>
-  <style>
-    /* Reset geral */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      width: 100%;
-      height: 100%;
-      background: #fc7232;
-      font-family: Arial, sans-serif;
-      overflow: hidden; /* Remove qualquer rolagem */
-      position: relative;
-    }
-
-    /* Textura com opacidade */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('img/backpizza.jpg'); /* textura pastel */
-      background-repeat: repeat;
-      background-size: auto;
-      opacity: 0.1;
-      z-index: -1;
-      pointer-events: none;
-    }
-
-    /* Logo */
-    .logo {
-      width: 300px;
-      margin: 40px auto 0;
-      display: block;
-      z-index: 1;
-      position: relative;
-    }
-
-    /* Bloco principal */
-    .bloco-cidade {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      z-index: 1;
-    }
-
-    .bloco-cidade h1 {
-      color: #070707;
-      margin-bottom: 25px;
-    }
-
-    .bloco-cidade h3 {
-      color: #222;
-      margin-bottom: 10px;
-    }
-
-    .button-container {
-      display: flex;
-      gap: 30px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .button {
-      background-color: #FFF9C4;
-      color: #333;
-      border: none;
-      padding: 25px 30px;
-      border-radius: 100px;
-      font-size: 18px;
-      cursor: pointer;
-      transition: background-color 0.3s, box-shadow 0.3s;
-    }
-
-    .button:hover {
-      background-color: #FFF59D;
-      box-shadow: 0 0 15px #fff9c4;
-    }
-
-    /* Imagem da pizza no rodapé */
-    .footer-pizza {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 600px;
-      max-width: 100%;
-      height: auto;
-      background-image: url('img/pizzaia.png'); /* imagem da pizza */
-      background-repeat: no-repeat;
-      background-position: center top;
-      background-size: contain;
-      pointer-events: none;
-      z-index: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Logo da empresa -->
   <img src="img/logosanta.png" alt="Logo da empresa" class="logo">
 
-  <!-- Bloco de escolha de cidade -->
   <div class="bloco-cidade">
-    <h3>Clica no botão abaixo</h3>
-    <h1>Escolha sua cidade</h1>
+   <div class="mensagem-artistica">
+  <p>Clica no botão abaixo<br>e escolha sua cidade</p>
+</div>
     <div class="button-container">
       <button class="button" onclick="location.href='https://pedido.anota.ai/loja/pizzaria-santa-hora-sao-jose?f=msa'"><b>São José</b></button>
       <button class="button" onclick="location.href='https://pedido.anota.ai/loja/santa-hora-pizzaria?f=msa'"><b>Florianópolis</b></button>
     </div>
   </div>
 
-  <!-- Pizza no rodapé -->
-  <div class="footer-pizza"></div>
+  <div class="footer-pizza">
+    <img src="img/pizzaia.png" alt="Pizza decorativa">
+  </div>
 
 </body>
 </html>
