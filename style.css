@@ -116,6 +116,7 @@ h1 {
   text-align: center;
   margin-bottom: 20px;
   letter-spacing: 0.02em;
+  z-index: 1; 
 }
 
 html, body {
@@ -124,4 +125,5 @@ html, body {
   padding-right: env(safe-area-inset-right, 0);
   padding-bottom: env(safe-area-inset-bottom, 0);
 }
+
 
